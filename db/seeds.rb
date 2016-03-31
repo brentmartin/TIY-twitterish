@@ -5,11 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-# 
-#
-# 10.times do
-#   user = User.create(name:Faker::Name.name, location:Faker::Address.city)
-#   10.times do
-#     Tweet.create(message:Faker::Lorem.sentence, user_id:user.id)
-#   end
-# end
+
+
+10.times do
+  user = User.create(name:Faker::Name.name, location:Faker::Address.city)
+  10.times do
+    Tweet.create(message:Faker::Lorem.sentence, user_id:user.id)
+  end
+end
