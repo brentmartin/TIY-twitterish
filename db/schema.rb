@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160330222023) do
 
   create_table "users", force: :cascade do |t|
     t.string "name",     null: false
-    t.string "location"
+    t.string "location", null: false
   end
 
 end
