@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
+
   def index
-    @tweets = Tweet.all
-    render template: "tweets/index.html.erb"
+    @tweets = Tweet.all.limit(25)
   end
 
 end
