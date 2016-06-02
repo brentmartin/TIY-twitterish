@@ -14,3 +14,17 @@
     </nav>
   </header>
 
+</body>
+</html>
+
+<span class="display">
+  <h1>All users</h1>
+</span>
+
+<% @users.each do |user| %>
+<article>
+  <p><%= user.name %></p>
+  <small><%= user.location %></small>
+</article>
+<hr class="noline" />
+<% end %>

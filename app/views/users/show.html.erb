@@ -14,3 +14,16 @@
     </nav>
   </header>
 
+</body>
+</html>
+
+<span class="display">
+  <h1><%= @user.name %>'s tweets</h1>
+</span>
+
+<% @tweets.each do |tweet| %>
+<article>
+  <p><%= tweet.message %></p>
+</article>
+<hr class="noline" />
+<% end %>
